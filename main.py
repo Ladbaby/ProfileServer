@@ -50,7 +50,7 @@ def serve_file():
         if args.update_interval:
             response.headers['profile-update-interval'] = f"{args.update_interval}"
         if args.web_url:
-            response.headers['profile-web-page-url'] = args.web_url
+            response.headers['profile-web-page-url'] = quote(args.web_url)
 
     return response
 
