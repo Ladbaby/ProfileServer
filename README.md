@@ -1,4 +1,4 @@
-# Profile Server
+# 📄 Profile Server
 
 A simple profile server supporting modified response header (non production) 
 
