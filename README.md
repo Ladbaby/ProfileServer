@@ -60,7 +60,28 @@ sudo apt install vnstat
 See the command line options:
 
 ```shell
-python3 main.py --help
+$ python3 main.py --help
+usage: main.py [-h] --file-path FILE_PATH [--file-name FILE_NAME] [--route-path ROUTE_PATH] [--address ADDRESS] [--port PORT]
+               [--total-bandwidth TOTAL_BANDWIDTH] [--expire EXPIRE] [--update-interval UPDATE_INTERVAL] [--web-url WEB_URL]
+
+Python file server with dynamic headers
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --file-path FILE_PATH
+                        Path to the file to serve
+  --file-name FILE_NAME
+                        Custom display name of the profile (support UTF-8)
+  --route-path ROUTE_PATH
+                        URL route path
+  --address ADDRESS     Address the server will listen on
+  --port PORT           Port number for the server
+  --total-bandwidth TOTAL_BANDWIDTH
+                        Bandwidth limit per month in byte
+  --expire EXPIRE       Expire time of the profile in seconds from 00:00:00 UTC, January 1, 1970
+  --update-interval UPDATE_INTERVAL
+                        Profile update interval in hours
+  --web-url WEB_URL     the URL to be opened via Open web page option in context menu
 ```
 
 minimal example:
