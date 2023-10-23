@@ -20,6 +20,14 @@ Since Nginx seems to be not capable of it, I wrote this simple server instead.
         ```
         subscription-userinfo: upload=455727941; download=6174315083; total=1073741824000; expire=1671815872
         ```
+
+    - `profile-update-interval`
+
+        e.g.,
+
+        ```
+        profile-update-interval: 12
+        ```
     
     - `content-disposition`
 
@@ -30,6 +38,8 @@ Since Nginx seems to be not capable of it, I wrote this simple server instead.
         ```
 
         > the profile name supports UTF-8, which means it can even contain emoji
+
+    - `profile-web-page-url`
 
 ## Installation
 
