@@ -43,11 +43,17 @@ Since Nginx seems to be not capable of it, I wrote this simple server instead.
 
 ## Installation
 
-Clone this repo and install the required libraries:
+- **Option 1: Precompiled binary**
 
-```shell
-pip install flask
-```
+    Got to the [release](https://github.com/Ladbaby/ProfileServer/releases) page and grap it. Note that it is compiled in Ubuntu 20.04 LTS, OS earlier may not be supported
+
+- **Option 2: Manually install**
+
+    Clone this repo and install the required libraries:
+
+    ```shell
+    pip install flask
+    ```
 
 Make sure you have `vnstat` installed to get the traffic data, for instance Debian:
 
