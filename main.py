@@ -25,7 +25,7 @@ args = get_args()
 def get_vnstat_data():
     try:
         result = json.loads(subprocess.check_output(['vnstat', '--json']).decode('utf-8'))
-        upload = result["interfaces"][0]["traffic"]["month"][0]["tx"]
+        upload = result["interfaces"][0]["traffic"]["month"][-1]["tx"]
         # note: Vultr only calculate outbound traffic, thus rx not used
         # download = result["interfaces"][0]["traffic"]["month"][0]["rx"]
         download = 0
